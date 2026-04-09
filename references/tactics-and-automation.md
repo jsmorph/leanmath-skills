@@ -2,7 +2,7 @@
 
 > **Sources:** Lean 4 Tactic Reference (lean-lang.org); Mathlib tactic list; Kevin Buzzard
 > et al. "Simp" guide; Terence Tao's proof tours; Mathematics in Lean (Avigad & Massot).
-> See `references/SOURCES.md` for full citations.
+> See [Sources and References](SOURCES.md) for full citations.
 
 ## Table of Contents
 

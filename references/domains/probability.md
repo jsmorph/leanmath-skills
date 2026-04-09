@@ -2,9 +2,11 @@
 
 > **Sources:** Rémy Degenne, "Basic probability in Mathlib" (Lean community blog,
 > 2024-10-17); Mathlib API docs for `Mathlib.Probability.*`.
-> **Deep patterns:** cameronfreer `measure-theory.md` (811 lines — conditional
-> expectation, sub-σ-algebras, instance pollution) and `domain-patterns.md` (measure
-> theory section). See `references/SOURCES.md`.
+> **Deep patterns:** cameronfreer's
+> [measure-theory.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/measure-theory.md)
+> for conditional expectation, sub-σ-algebras, and instance pollution, and
+> [domain-patterns.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/domain-patterns.md)
+> for the measure theory section. See [Sources and References](../SOURCES.md).
 
 ## Setup Boilerplate
 

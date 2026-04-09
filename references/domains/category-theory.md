@@ -1,7 +1,7 @@
 # Domain: Category Theory in Mathlib
 
 > **Sources:** Mathlib API docs; Mathlib category theory overview; Lean community blog.
-> See `references/SOURCES.md`.
+> See [Sources and References](../SOURCES.md).
 
 ## Core Structures
 

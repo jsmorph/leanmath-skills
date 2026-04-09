@@ -1,7 +1,9 @@
 # Domain: Algebra and Number Theory in Mathlib
 
 > **Sources:** Mathlib API docs; Baanen et al. (Dedekind domains); Mathematics in Lean.
-> **Extended:** cameronfreer `domain-patterns.md` (algebra section). See `references/SOURCES.md`.
+> **Extended:** cameronfreer's
+> [domain-patterns.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/domain-patterns.md)
+> for the algebra section. See [Sources and References](../SOURCES.md).
 
 ## The Algebraic Hierarchy
 

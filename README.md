@@ -9,7 +9,6 @@ less sloppy.
 You might want to have your agent clone this repo and then use it as
 it sees fit.
 
-The root skill is obviously `SKILL.md`.  That document should direct
+The root skill is obviously [SKILL.md](SKILL.md).  That document should direct
 you to more specific skills.
-
 

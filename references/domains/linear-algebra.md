@@ -1,7 +1,7 @@
 # Domain: Linear Algebra in Mathlib
 
 > **Sources:** Mathlib API docs; Mathlib overview; Mathematics in Lean.
-> See `references/SOURCES.md`.
+> See [Sources and References](../SOURCES.md).
 
 ## Core Types
 

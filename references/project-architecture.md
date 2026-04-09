@@ -2,8 +2,10 @@
 
 > **Sources:** Mathlib contributing documentation; Baanen et al., "Growing Mathlib"
 > (2026); Massot's Blueprint tool; Tao's PFR experience; Mathematics in Lean
-> (Avigad & Massot). For compilation debugging, see cameronfreer `compilation-errors.md`.
-> For performance, see cameronfreer `performance-optimization.md`.
+> (Avigad & Massot). For compilation debugging, see
+> [compilation-errors.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/compilation-errors.md).
+> For performance, see
+> [performance-optimization.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/performance-optimization.md).
 
 ## Scoping
 
@@ -58,7 +60,8 @@ Use the weakest structure that suffices.
 - Scope heartbeats: `set_option maxHeartbeats 400000 in` (per declaration).
 - Split large proofs into helper lemmas.
 - Document elaboration workarounds in a shared markdown file.
-- For deep typeclass debugging, see cameronfreer `instance-pollution.md`.
+- For deep typeclass debugging, see
+  [instance-pollution.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/instance-pollution.md).
 
 ## Contributing to Mathlib
 

@@ -4,21 +4,20 @@
 
 ### cameronfreer/lean4-skills (workflow + deep references)
 - **Repository:** https://github.com/cameronfreer/lean4-skills
-  MIT-licensed Lean 4 workflow pack for AI coding agents. 16,000+ lines of reference
-  material across 37 files. This is the most comprehensive existing skill for LLM-driven
-  Lean 4 work. Our skill complements theirs: they handle proving workflow; we handle
-  mathematical content knowledge.
+  MIT-licensed Lean 4 workflow pack for AI coding agents. It provides broad coverage
+  for LLM-driven Lean 4 work. Our skill complements theirs: they handle proving
+  workflow; we handle mathematical content knowledge.
 - **Key files we draw from or reference:**
-  - `lean-phrasebook.md` — math→Lean translations (inspired by Tao's Lean Phrasebook)
-  - `mathlib-guide.md` — Mathlib search strategies and import patterns
-  - `domain-patterns.md` — domain-specific proof patterns
-  - `measure-theory.md` — deep measure theory / conditional expectation patterns
-  - `tactics-reference.md` — comprehensive tactic documentation
-  - `compilation-errors.md` — error-by-error debugging
-  - `instance-pollution.md` — typeclass conflict patterns
-  - `mathlib-style.md` — Mathlib code style
-  - `proof-golfing.md` — proof optimization
-  - `performance-optimization.md` — build speed
+  - [lean-phrasebook.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/lean-phrasebook.md) — math→Lean translations, inspired by Tao's Lean Phrasebook
+  - [mathlib-guide.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/mathlib-guide.md) — Mathlib search strategies and import patterns
+  - [domain-patterns.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/domain-patterns.md) — domain-specific proof patterns
+  - [measure-theory.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/measure-theory.md) — deep measure theory and conditional expectation patterns
+  - [tactics-reference.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/tactics-reference.md) — comprehensive tactic documentation
+  - [compilation-errors.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/compilation-errors.md) — error-by-error debugging
+  - [instance-pollution.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/instance-pollution.md) — typeclass conflict patterns
+  - [mathlib-style.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/mathlib-style.md) — Mathlib code style
+  - [proof-golfing.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/proof-golfing.md) — proof optimization
+  - [performance-optimization.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/performance-optimization.md) — build speed
 
 ### leanprover/skills (official Lean team skills)
 - **Repository:** https://github.com/leanprover/skills
@@ -55,7 +54,7 @@
 
 - **"Basic probability in Mathlib"** (Rémy Degenne, 2024-10-17)
   https://leanprover-community.github.io/blog/posts/basic-probability-in-mathlib/
-  Primary source for `domains/probability.md`.
+  Primary source for [Probability](domains/probability.md).
 
 - **"A slightly longer Lean 4 proof tour"** (Terence Tao, 2023-12-05)
   https://terrytao.wordpress.com/2023/12/05/a-slightly-longer-lean-4-proof-tour/
@@ -65,7 +64,9 @@
 
 - **Tao's Lean Phrasebook** (spreadsheet)
   https://docs.google.com/spreadsheets/d/1Gsn5al4hlpNc_xKoXdU6XGmMyLiX4q-LFesFVsMlANo/
-  Basis for cameronfreer's `lean-phrasebook.md` and our `math-to-lean.md`.
+  Basis for cameronfreer's
+  [lean-phrasebook.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/lean-phrasebook.md)
+  and our [Math-to-Lean Phrasebook](math-to-lean.md).
 
 ## Papers
 

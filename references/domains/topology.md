@@ -1,8 +1,9 @@
 # Domain: Topology in Mathlib
 
 > **Sources:** Mathlib API docs; Mathlib topology overview; Mathematics in Lean.
-> **Extended:** cameronfreer `domain-patterns.md` (analysis & topology section).
-> See `references/SOURCES.md`.
+> **Extended:** cameronfreer's
+> [domain-patterns.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/domain-patterns.md)
+> for the analysis and topology section. See [Sources and References](../SOURCES.md).
 
 ## The Topological Hierarchy
 

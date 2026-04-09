@@ -1,8 +1,10 @@
 # Mathlib Search and Discovery
 
-> **Sources:** cameronfreer/lean4-skills `mathlib-guide.md`; Mathlib naming conventions
+> **Sources:** cameronfreer/lean4-skills
+> [mathlib-guide.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/mathlib-guide.md);
+> Mathlib naming conventions
 > (leanprover-community.github.io/contribute/naming.html); Terence Tao's Lean 4 proof
-> tours. See `references/SOURCES.md` for full citations.
+> tours. See [Sources and References](SOURCES.md) for full citations.
 
 ## Table of Contents
 

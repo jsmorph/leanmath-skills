@@ -1,9 +1,10 @@
 # Math-to-Lean Phrasebook
 
-> **Sources:** Adapted from cameronfreer/lean4-skills `lean-phrasebook.md`, which is
+> **Sources:** Adapted from cameronfreer/lean4-skills
+> [lean-phrasebook.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/lean-phrasebook.md), which is
 > itself inspired by [Terence Tao's Lean Phrasebook](https://docs.google.com/spreadsheets/d/1Gsn5al4hlpNc_xKoXdU6XGmMyLiX4q-LFesFVsMlANo/).
-> For the full 847-line version with more examples, see cameronfreer's original.
-> See `references/SOURCES.md` for full citations.
+> For the full version with more examples, see cameronfreer's original.
+> See [Sources and References](SOURCES.md) for full citations.
 
 This reference translates mathematical proof language into Lean 4 tactic proofs.
 Organized by the kind of reasoning step you want to express.

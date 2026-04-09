@@ -2,9 +2,12 @@
 
 > **Sources:** Mathlib API docs for `Mathlib.MeasureTheory.*` and `Mathlib.Analysis.*`;
 > Mathematics in Lean (Avigad & Massot).
-> **Deep patterns:** cameronfreer `measure-theory.md` (811 lines — sub-σ-algebras,
-> conditional expectation, instance pollution, trimmed measures) and
-> `instance-pollution.md` (435 lines — typeclass debugging). See `references/SOURCES.md`.
+> **Deep patterns:** cameronfreer's
+> [measure-theory.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/measure-theory.md),
+> which covers sub-σ-algebras, conditional expectation, instance pollution, and
+> trimmed measures, and
+> [instance-pollution.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/instance-pollution.md)
+> for typeclass debugging. See [Sources and References](../SOURCES.md).
 
 ## Setup
 

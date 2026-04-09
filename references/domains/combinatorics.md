@@ -1,8 +1,10 @@
 # Domain: Combinatorics in Mathlib
 
 > **Sources:** Mathlib API docs; Tao's proof tour (Finset/BigOperators walkthrough);
-> Mathlib overview. **Extended:** cameronfreer `domain-patterns.md` (number theory
-> and combinatorics section). See `references/SOURCES.md`.
+> Mathlib overview. **Extended:** cameronfreer's
+> [domain-patterns.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/domain-patterns.md)
+> for the number theory and combinatorics section. See
+> [Sources and References](../SOURCES.md).
 
 ## Setup
 
