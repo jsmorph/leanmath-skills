@@ -1,8 +1,10 @@
 # Domain: Measure Theory and Analysis in Mathlib
 
 > **Sources:** Mathlib API docs for `Mathlib.MeasureTheory.*` and `Mathlib.Analysis.*`;
-> Mathematics in Lean ch. 10-11 (Avigad & Massot); Armstrong & Kempe De Giorgi–Nash–Moser
-> formalization (avoid `EuclideanSpace` lesson). See `references/SOURCES.md`.
+> Mathematics in Lean (Avigad & Massot).
+> **Deep patterns:** cameronfreer `measure-theory.md` (811 lines — sub-σ-algebras,
+> conditional expectation, instance pollution, trimmed measures) and
+> `instance-pollution.md` (435 lines — typeclass debugging). See `references/SOURCES.md`.
 
 ## Setup
 
@@ -244,11 +246,12 @@ intro ε hε
 ...
 ```
 
-## Avoid `EuclideanSpace`
+## `EuclideanSpace` Performance Note
 
-For analysis-heavy work, `EuclideanSpace ℝ (Fin n)` causes severe elaboration problems.
-Use `Fin n → ℝ` or `ι → ℝ` directly. This is documented experience from the
-De Giorgi–Nash–Moser formalization.
+Some practitioners have reported that `EuclideanSpace ℝ (Fin n)` can cause elaboration
+slowdowns in analysis-heavy developments. If you encounter performance issues, working
+with `Fin n → ℝ` or `ι → ℝ` directly may help. Check Lean Zulip for the current
+status of this issue, as Mathlib's handling of `EuclideanSpace` may have improved.
 
 ## Key Imports
 ```lean

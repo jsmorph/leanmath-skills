@@ -1,8 +1,8 @@
 # Domain: Topology in Mathlib
 
-> **Sources:** Mathlib API docs for `Mathlib.Topology.*`; Mathlib topology theory overview
-> (leanprover-community.github.io/theories/topology.html); Mathematics in Lean ch. 9
-> (Avigad & Massot). See `references/SOURCES.md`.
+> **Sources:** Mathlib API docs; Mathlib topology overview; Mathematics in Lean.
+> **Extended:** cameronfreer `domain-patterns.md` (analysis & topology section).
+> See `references/SOURCES.md`.
 
 ## The Topological Hierarchy
 

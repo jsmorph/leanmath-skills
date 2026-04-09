@@ -1,9 +1,7 @@
 # Domain: Algebra and Number Theory in Mathlib
 
-> **Sources:** Mathlib API docs for `Mathlib.Algebra.*`, `Mathlib.RingTheory.*`,
-> `Mathlib.FieldTheory.*`, `Mathlib.NumberTheory.*`; Baanen et al., "A formalization of
-> Dedekind domains and class groups" (2022); Auslander–Buchsbaum–Serre formalization
-> (2025); Mathematics in Lean ch. 2, 6 (Avigad & Massot). See `references/SOURCES.md`.
+> **Sources:** Mathlib API docs; Baanen et al. (Dedekind domains); Mathematics in Lean.
+> **Extended:** cameronfreer `domain-patterns.md` (algebra section). See `references/SOURCES.md`.
 
 ## The Algebraic Hierarchy
 

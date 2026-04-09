@@ -1,8 +1,10 @@
 # Domain: Probability Theory in Mathlib
 
-> **Primary source:** Rémy Degenne, "Basic probability in Mathlib" (Lean community blog,
-> 2024-10-17). Also: Degenne et al., "Formalization of Brownian motion in Lean";
-> Mathlib API docs for `Mathlib.Probability.*`. See `references/SOURCES.md`.
+> **Sources:** Rémy Degenne, "Basic probability in Mathlib" (Lean community blog,
+> 2024-10-17); Mathlib API docs for `Mathlib.Probability.*`.
+> **Deep patterns:** cameronfreer `measure-theory.md` (811 lines — conditional
+> expectation, sub-σ-algebras, instance pollution) and `domain-patterns.md` (measure
+> theory section). See `references/SOURCES.md`.
 
 ## Setup Boilerplate
 

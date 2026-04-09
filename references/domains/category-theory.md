@@ -1,8 +1,7 @@
 # Domain: Category Theory in Mathlib
 
-> **Sources:** Mathlib API docs for `Mathlib.CategoryTheory.*`; Mathlib category theory
-> overview (leanprover-community.github.io/theories/category_theory.html); Lean community
-> blog posts on abelian categories and Freyd-Mitchell theorem. See `references/SOURCES.md`.
+> **Sources:** Mathlib API docs; Mathlib category theory overview; Lean community blog.
+> See `references/SOURCES.md`.
 
 ## Core Structures
 

@@ -1,8 +1,8 @@
 # Domain: Combinatorics in Mathlib
 
-> **Sources:** Mathlib API docs for `Mathlib.Data.Finset.*`, `Mathlib.Combinatorics.*`,
-> `Mathlib.Algebra.BigOperators.*`; Terence Tao's Lean 4 proof tour (Finset/BigOperators
-> walkthrough); Mathlib overview (combinatorics coverage). See `references/SOURCES.md`.
+> **Sources:** Mathlib API docs; Tao's proof tour (Finset/BigOperators walkthrough);
+> Mathlib overview. **Extended:** cameronfreer `domain-patterns.md` (number theory
+> and combinatorics section). See `references/SOURCES.md`.
 
 ## Setup
 

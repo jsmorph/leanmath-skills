@@ -1,7 +1,6 @@
 # Domain: Linear Algebra in Mathlib
 
-> **Sources:** Mathlib API docs for `Mathlib.LinearAlgebra.*`, `Mathlib.Analysis.InnerProductSpace.*`;
-> Mathlib overview (linear algebra coverage); Mathematics in Lean ch. 8 (Avigad & Massot).
+> **Sources:** Mathlib API docs; Mathlib overview; Mathematics in Lean.
 > See `references/SOURCES.md`.
 
 ## Core Types
