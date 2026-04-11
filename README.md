@@ -16,7 +16,7 @@ If you like to live dangerously, you might want to have your agent
 clone this repo and then use it as it sees fit.  Then contemplate.
 The entry-point skill document is [Skill Overview](SKILL.md).  The
 detailed mathematical reference begins with
-[Root Reference](skills/ROOT.md).
+[`skills/ROOT.md`](skills/ROOT.md).
 
 Currently tools are fair game here.  We won't emphasize MCP and
 instead prefer CLI tools.
