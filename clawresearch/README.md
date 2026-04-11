@@ -1,6 +1,6 @@
-This directory contains some working files for some claw-driven research for this repo.
+# leanmath
 
-Track links and candidate sources that look worth incorporating into this repo.
+Track links and candidate sources that look worth incorporating into `jsmorph/leanmath-skills`.
 
 Goal: maintain a lightweight, accumulative queue of useful material with short notes about why each item may matter.
 

@@ -23,3 +23,5 @@ Added `.gitignore` entries for `.codex` and editor backup files.
 Moved the root skill document from `SKILL.md` to [Root Reference](skills/ROOT.md).
 Renamed the `references` directory to `skills`.
 Restored [Skill Overview](SKILL.md) as the top-level entry point for the repository.
+Updated [clawresearch README](clawresearch/README.md) during the research sync.
+Resynced `clawresearch/` and added the latest review note on 2026-04-11.

@@ -13,6 +13,9 @@
 
 - Highest signal: Lean community blog, especially practical posts and recurring domain summaries.
 - Best domain-scouting source: `Month in Mathlib` posts.
+- Recency is a first-class filter for both Lean and mathlib guidance.
+- Prefer recent Lean 4 and current-mathlib material by default.
+- Treat Lean 3 / early-transition / older mathlib guidance as suspect unless still verified useful.
 - Best paper filter: only keep papers that expose reusable proof patterns, domain architecture, or substantial formalization scope.
 - Public Zulip discovery through broad web search is currently low-yield and noisy.
 - Maintenance/workflow artifacts are in scope when they would improve `leanmath-skills` usability.
@@ -66,6 +69,7 @@
 Mark *high* when the item:
 - teaches a reusable workflow
 - reflects current community best practice
+- is recent enough to plausibly match current Lean 4 / mathlib usage
 - exposes a major new formalization area
 - points to datasets, tools, or automation relevant to Lean work
 - would likely change or expand a skill doc
@@ -73,9 +77,19 @@ Mark *high* when the item:
 Mark *medium* when the item:
 - is a useful example or case study
 - may inform future coverage
+- is somewhat older but still looks directionally useful
 - mainly serves as a lead to deeper sources
 
 Mark *low* when the item:
 - is interesting but redundant
 - is speculative or thin on implementation detail
 - is only tangentially about Lean/mathlib practice
+- is old enough that guidance may be stale unless revalidated
+
+## Review buckets
+
+When revisiting existing links, classify each as one of:
+- `escalate` — recent/current and likely worth deeper analysis soon
+- `keep` — useful to retain, but not urgent
+- `deprecate` — keep only as historical background or a topic lead; not guidance
+- `drop` — remove if it is too stale, noisy, or off-target

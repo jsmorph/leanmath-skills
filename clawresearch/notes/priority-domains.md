@@ -7,6 +7,11 @@ Date: 2026-04-11
 After two initial passes, the best recurring source appears to be the Lean community blog.
 In particular, `Month in Mathlib` posts are strong for scouting domain-specific developments, while standalone blog posts are stronger for workflow and implementation detail.
 
+Most importantly: recency is a first-class filter.
+For both Lean and mathlib, recent Lean 4 / current-mathlib guidance should be preferred by default.
+Older Lean 3, early-port, or otherwise old material should be treated as suspect unless revalidated.
+It can remain useful as background, historical context, or a lead to deeper mining, but should not drive skill authoring without verification.
+
 Public Zulip discovery via generic web search is currently weak: too much noise, poor indexing, and too few directly actionable technical threads.
 That may still be worth revisiting later with topic-specific or person-specific searches, but it should not drive the daily monitor.
 
@@ -43,6 +48,8 @@ Favor items that provide one or more of the following:
 
 - Start with the Lean community blog.
 - Check for new `Month in Mathlib` / `New in mathlib` material.
+- Prefer recent Lean 4 and current-mathlib guidance over older material.
 - Use arXiv selectively, not as the primary feed.
 - Treat maintenance/discovery tools as first-class if they would improve `leanmath-skills`.
 - Add links only when they are genuinely informative; avoid filling the list with thin announcements.
+- Periodically review existing links for `escalate`, `keep`, `deprecate`, or `drop` status as the ecosystem moves.
