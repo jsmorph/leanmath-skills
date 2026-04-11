@@ -16,3 +16,7 @@ Added [TODO.md](TODO.md) with a note to consider Vilin97's mathlib conventions a
 additional source.
 Added Axle documentation as another source to consider.
 Added [Tool Index](references/tools.md) to consolidate the tool references already scattered across the repository.
+Added Aristotle as another source to consider.
+Added botbaki as another source to consider.
+Added polyproof as another source to consider.
+Added `.gitignore` entries for `.codex` and editor backup files.
