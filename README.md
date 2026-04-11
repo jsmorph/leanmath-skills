@@ -21,6 +21,6 @@ detailed mathematical reference begins with
 Currently tools are fair game here.  We won't emphasize MCP and
 instead prefer CLI tools.
 
-Scary: [`clawreserach`](clawresearch) is a workspace for a claw-like
+Scary: [`clawresearch`](clawresearch) is a workspace for a claw-like
 agent looking for material for this repo.
 
