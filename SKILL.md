@@ -1,288 +1,89 @@
 ---
 name: lean4-mathlib-research
 description: >
-  Mathematical knowledge layer for research-level Lean 4 formalization with Mathlib.
-  For LLMs and LLM-driven agents. Use when the task requires knowing what Mathlib
-  provides, how its API is organized, what types/lemmas/tactics to use in a specific
-  mathematical domain, how to name things, or how to architect a formalization project.
-  Trigger on: Lean 4, Mathlib, tactic proofs, formalization, .lean files importing
-  Mathlib, proof debugging, naming conventions, Mathlib search, definition engineering,
-  project planning. Even a pasted Lean error or "how do I prove X in Lean" qualifies.
+  Entry point for a curated Lean 4 + Mathlib knowledge base. Use when deciding
+  whether this repository is relevant to a task, and to route to the right
+  deeper reference under skills/.
 ---
 
-# Lean 4 + Mathlib: Mathematical Knowledge for LLMs
-
-## Purpose and Scope
-
-This skill is the **mathematical knowledge layer** for LLMs and agents doing
-research-level formalization in Lean 4 with Mathlib. It tells you *what Mathlib has*,
-*how to find it*, *how to use it*, and *how the math maps to Lean types and tactics*
-across seven mathematical domains.
-
-**For proving workflow, sorry management, proof golfing, compiler-guided repair, and
-LSP tool integration**, see [cameronfreer/lean4-skills](https://github.com/cameronfreer/lean4-skills)
-(MIT licensed). That skill provides the structured prove → review → golf → checkpoint
-loop, compilation error debugging, and the operational mechanics of driving Lean from
-an agent. This skill provides the mathematical content that workflow operates on.
-
-**For Mathlib PR conventions, review guidelines, and CI tooling**, see
-[leanprover/skills](https://github.com/leanprover/skills) (the official Lean team
-skills for mathlib-pr, mathlib-review, mathlib-build).
-
-## Sources
-
-This skill draws from: Mathlib's official documentation (naming, style, contributing
-guidelines); Rémy Degenne's probability guide; Terence Tao's phrasebook and proof
-tours; the "Growing Mathlib" paper (Baanen et al. 2026); Cameron Freer's lean4-skills,
-especially [mathlib-guide.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/mathlib-guide.md),
-[domain-patterns.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/domain-patterns.md),
-[measure-theory.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/measure-theory.md),
-and [lean-phrasebook.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/lean-phrasebook.md);
-and Mathlib API documentation. Full citations with URLs are in
-[Sources and References](references/SOURCES.md).
-
-## How to Use This Skill
-
-**Always loaded:** This file. Contains the core mathematical workflow, tactic decision
-tree, math-to-Lean translation patterns, and dispatch table for deeper references.
-
-**Load on demand:** One or two reference files per query, based on the dispatch table
-below. Don't load everything.
-
----
-
-## Dispatch Table
-
-### Cross-Cutting References
-
-| File | Load when... |
-|------|-------------|
-| [Search and Discovery](references/search-and-discovery.md) | Need to find a Mathlib lemma, definition, or file. Covers five search strategies, naming conventions for guessing names, Mathlib file hierarchy, Loogle/LeanSearch. |
-| [Naming and Style](references/naming-and-style.md) | Naming definitions/lemmas, formatting code, preparing a Mathlib PR. Full capitalization rules, symbol→name dictionary, variable conventions, file headers, linting. |
-| [Project Architecture](references/project-architecture.md) | Planning a multi-file formalization. Definition engineering, Mathlib integration, file organization, the Blueprint model, type hierarchies, contributing to Mathlib. |
-| [Tools](references/tools.md) | Need a consolidated view of search services, automation tactics, project tooling, and community resources. |
-
-### Domain Sub-Skills
-
-Each covers: setup boilerplate, core Mathlib types, key lemma names, standard variable
-conventions, important API patterns, domain-specific tactics, common pitfalls, and
-curated imports.
-
-| File | Mathematical domain |
-|------|-------------------|
-| [Probability](references/domains/probability.md) | Probability spaces, random variables, independence, conditioning, martingales, kernels |
-| [Measure Theory and Analysis](references/domains/measure-theory-analysis.md) | Measures, integration (Lebesgue + Bochner), Lp spaces, derivatives, a.e. reasoning, filters |
-| [Combinatorics](references/domains/combinatorics.md) | Finset, big operators (∑/∏), counting, graphs, set families, additive combinatorics |
-| [Algebra and Number Theory](references/domains/algebra-number-theory.md) | Groups, rings, fields, ideals, localization, Galois theory, Dedekind domains |
-| [Topology](references/domains/topology.md) | Topological spaces, filters, continuity, compactness, metric spaces, manifolds |
-| [Linear Algebra](references/domains/linear-algebra.md) | Modules, vector spaces, matrices, eigenvalues, tensor products, inner products |
-| [Category Theory](references/domains/category-theory.md) | Categories, functors, limits, adjunctions, abelian categories, sheaves |
-
-### Also see (in cameronfreer/lean4-skills)
-
-| Their file | Use for |
-|-----------|---------|
-| [lean-phrasebook.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/lean-phrasebook.md) | Math English → Lean translations, inspired by Tao's phrasebook |
-| [compilation-errors.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/compilation-errors.md) | Error-by-error debugging, including type mismatch and unknown identifier failures |
-| [measure-theory.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/measure-theory.md) | Deep measure theory: sub-σ-algebras, instance pollution, condexp |
-| [instance-pollution.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/instance-pollution.md) | Typeclass conflicts critical for measure theory work |
-| [tactics-reference.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/tactics-reference.md) | Comprehensive tactic catalog with decision trees |
-| [calc-patterns.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/calc-patterns.md) | Calculational proof patterns and simp interaction |
-| [proof-golfing.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/proof-golfing.md) | Optimizing compiled proofs |
-| [domain-patterns.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/domain-patterns.md) | Patterns for measure theory, geometry, algebra, and number theory |
-
----
-
-## Core Mathematical Workflow
-
-### 1. Search Mathlib Before Proving
-
-Mathlib has 100,000+ theorems. **Always search before writing tactics.**
-
-**Search order for an LLM:**
-```
-1. Guess the name from conventions.  See [Naming and Style](references/naming-and-style.md).
-   - "continuous preimage of compact is compact" → Continuous.isCompact_preimage
-   - "sum over range telescopes" → Finset.sum_range_sub
-2. Use exact?, apply?, rw? if you have a goal state
-3. Grep the Mathlib source tree for keywords
-4. Check the Mathlib file hierarchy by domain
-5. Use Loogle for type-pattern search: Continuous ?f → IsCompact ?s → IsCompact (?f ⁻¹' ?s)
-6. Use LeanSearch for natural language: "continuous function preserves compact sets"
-```
-
-### 2. Use the Right Mathlib Types
-
-**Always prefer Mathlib's definitions.** Never redefine compactness, measurability,
-continuity, etc. If Mathlib's version differs from your paper, prove the equivalence
-and use Mathlib's.
-
-**Standard patterns:**
-- Algebraic structure → typeclasses: `[CommRing R]`, `[TopologicalSpace X]`
-- Maps → bundled morphisms: `f : R →+* S` (not `f : R → S` with separate proofs)
-- Properties → Prop-valued classes: `[IsNoetherian R M]`, `[IsProbabilityMeasure μ]`
-- Subobjects → bundled: `Subgroup G`, `Ideal R`, `Submodule R M`
-
-**Use the weakest typeclass that suffices.** A lemma about `CommMonoid` serves groups,
-rings, and fields.
-
-### 3. Provide API With Every Definition
-
-```lean
-def myDef : ... := ...
-@[simp] theorem myDef_apply (x : α) : myDef x = ... := rfl
-@[ext] theorem myDef_ext : ... := ...
-```
-
-A definition without `@[simp]` / `@[ext]` lemmas is unusable by automation.
-
-### 4. Formalize What Papers Leave Implicit
-
-Paper proofs say "by a routine argument" or "by standard reductions." In Lean, every
-such step becomes a named lemma: truncations, cutoffs, admissibility of test functions,
-rescalings, change-of-variables estimates, quantitative iteration compatibility.
-
----
-
-## Math-to-Lean Quick Translation
-
-Inspired by Tao's Lean Phrasebook.  For the expanded version, see
-[lean-phrasebook.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/lean-phrasebook.md).
-
-### Stating results
-| Math | Lean |
-|------|------|
-| Let R be a commutative ring | `variable [CommRing R]` |
-| Let f : X → Y be continuous | `variable (hf : Continuous f)` |
-| Let μ be a probability measure on Ω | `variable {μ : Measure Ω} [IsProbabilityMeasure μ]` |
-| Let H be a normal subgroup of G | `variable (H : Subgroup G) [H.Normal]` |
-| For all ε > 0, there exists δ > 0 | `∀ ε > 0, ∃ δ > 0, ...` |
-
-### Forward reasoning (building up)
-| Math phrase | Lean tactic |
-|------------|-------------|
-| "Observe that A holds because..." | `have h : A := by ...` |
-| "Applying f to h gives B" | `have hB : B := f h` |
-| "This follows from h" | `exact h` |
-| "Replace h with its consequence" | `replace h := f h` |
-
-### Backward reasoning (reducing the goal)
-| Math phrase | Lean tactic |
-|------------|-------------|
-| "It suffices to show A" | `suffices h : A by ...` |
-| "Apply lemma L" | `apply L` or `exact L _ _` |
-| "By the definition of X" | `unfold X` or `simp only [X]` |
-| "By cases on h" | `rcases h with ⟨a, b⟩ \| c` |
-| "By contradiction" | `by_contra h` |
-
-### Equational / inequality reasoning
-| Math phrase | Lean |
-|------------|------|
-| "a = b = c" chain | `calc a _ = b := by ... _ = c := by ...` |
-| "a ≤ b ≤ c" chain | `calc a _ ≤ b := by ... _ ≤ c := by ...` |
-| "by monotonicity" | `gcongr` |
-| "by the triangle inequality" | `norm_add_le` or `dist_triangle` |
-
----
-
-## Tactic Decision Tree
-
-When you have a goal, try in this order:
-
-**Atomic closers (try first):**
-`rfl` → `exact h` → `assumption` → `contradiction`
-
-**Arithmetic / algebraic:**
-`ring` (ring eq) → `field_simp; ring` (field eq) → `omega` (ℕ/ℤ linear) →
-`linarith` (ordered field linear) → `nlinarith` (nonlinear) → `norm_num` (numerical) →
-`positivity` (0 < x or 0 ≤ x)
-
-**Search (discovery, not production):**
-`exact?` → `apply?` → `rw?` → `simp?`
-
-**Structural:**
-`ext` (extensionality) → `congr` / `gcongr` (congruence) → `constructor` (split ∧/↔) →
-`rcases` / `obtain` (decompose) → `induction ... with` → `by_cases h : P`
-
-**Simplification:**
-`simp only [...]` (always pin lemmas) → `simp_rw [...]` (rewrites under binders) →
-`norm_cast` / `push_cast` (coercions)
-
-**Domain automation:**
-`fun_prop` (continuity/measurability/differentiability) → `measurability` →
-`continuity` → `aesop` → `grind` → `aesop_cat` (category theory)
-
-**Inequality chains:**
-`calc` with `gcongr`, `linarith`, `positivity` in each step
-
-**After proof compiles — clean up:**
-Replace `simp` with `simp only [...]` (use `simp?` to find lemmas).
-Replace `exact?` / `apply?` with the lemma they found.
-
----
-
-## Common Import Groups
-
-```lean
--- Measure Theory & Probability
-import Mathlib.MeasureTheory.Measure.MeasureSpace
-import Mathlib.MeasureTheory.Integral.Lebesgue
-import Mathlib.Probability.Independence.Basic
-
--- Analysis & Calculus
-import Mathlib.Analysis.Calculus.Deriv.Basic
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Topology.MetricSpace.Basic
-
--- Algebra & Number Theory
-import Mathlib.Algebra.Ring.Basic
-import Mathlib.RingTheory.Ideal.Basic
-import Mathlib.FieldTheory.Galois.Basic
-
--- Combinatorics
-import Mathlib.Data.Finset.Basic
-import Mathlib.Algebra.BigOperators.Group.Finset
-
--- Linear Algebra
-import Mathlib.LinearAlgebra.Basic
-import Mathlib.LinearAlgebra.Matrix.Determinant
-
--- Category Theory
-import Mathlib.CategoryTheory.Category.Basic
-import Mathlib.CategoryTheory.Limits.Shapes.Products
-
--- Topology
-import Mathlib.Topology.Basic
-import Mathlib.Topology.Compactness.IsCompact
-
--- Commonly needed tactics
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Positivity
-import Mathlib.Tactic.FunProp
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.GCongr
-```
-
----
-
-## When Responding
-
-1. **Always provide complete, compilable code** with `import` statements.
-
-2. **Search Mathlib first.** Before writing any tactic proof, suggest the likely
-   existing lemma name. Use naming conventions to guess.
-
-3. **For error messages:** Diagnose the cause (missing import, typeclass not found,
-   universe mismatch, `simp` failure). Give the fix. For deep debugging, see
-   [compilation-errors.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/compilation-errors.md).
-
-4. **For "how do I prove X":** State the likely Mathlib lemma. If not in Mathlib,
-   give the proof strategy and working tactic code.
-
-5. **For project planning:** Load [Project Architecture](references/project-architecture.md). Help design
-   the definition hierarchy and dependency chain.
-
-6. **For domain-specific work:** Load the relevant file under
-   [domain references](references/domains/).
+# Lean 4 + Mathlib Research Skill
+
+## Scope
+
+This file is the entry point for the repository.  It helps an LLM decide
+whether the deeper material applies to the task and, if so, which file to load
+next.  The repository fits Lean 4 and Mathlib work where the hard part is
+library navigation, theorem search, tactic selection, naming, or formalization
+design.
+
+The material is strongest when the task depends on existing Mathlib practice:
+which typeclass to use, which bundled structure to pick, which theorem names are
+plausible, which imports to start from, or which tactics tend to close a goal
+shape.  It also helps with research-level mathematical domains that already have
+substantial Mathlib support, including probability, measure theory, algebra,
+topology, linear algebra, combinatorics, and category theory.  Outside Lean 4
+and Mathlib formalization, most of the repository adds little.
+
+This repository is a synthesized knowledge layer.  It helps with recall,
+routing, and search, but final answers still depend on the current Mathlib
+codebase and the local project context.  Confirm names and statements with
+source inspection, `#check`, API docs, and the tools collected in
+[Tool Index](skills/tools.md).
+
+When the task turns on compiler-guided repair, proof golfing, sorry management,
+PR review, or CI routines, pair this material with upstream workflow packs.
+[cameronfreer/lean4-skills](https://github.com/cameronfreer/lean4-skills)
+covers the operational loop for agent-driven Lean work.  [leanprover/skills](https://github.com/leanprover/skills)
+covers the official Lean-team workflows around Mathlib.
+
+## Navigation
+
+Start here, then load one or two deeper files.  In most cases,
+[Root Reference](skills/ROOT.md) or [Tool Index](skills/tools.md) is the first
+stop.  Domain files are narrower and matter once the mathematical area is
+clear.
+
+### Core References
+
+| File | Use when | Contents |
+|------|----------|----------|
+| [Root Reference](skills/ROOT.md) | Need the main mathematical workflow for Lean 4 and Mathlib | Dispatch table, tactic order, search strategy, import patterns, and high-level guidance on definitions and APIs |
+| [Tool Index](skills/tools.md) | Need to choose a search service, automation tactic, project tool, or external workflow resource | Consolidated list of tools and services mentioned across the repository |
+| [Search and Discovery](skills/search-and-discovery.md) | Need to find an existing theorem, definition, namespace, or source file | Search order, name-guessing, local source inspection, public search services, and escalation to Zulip |
+| [Tactics and Automation](skills/tactics-and-automation.md) | Need to choose tactics by goal shape or by mathematical domain | Practical tactic guidance, automation boundaries, and common tactic combinations |
+| [Math-to-Lean Phrasebook](skills/math-to-lean.md) | Need to translate mathematical prose into Lean declarations or proof steps | Common mathematical phrases, Lean encodings, and proof-language patterns |
+| [Naming and Style](skills/naming-and-style.md) | Need to name declarations, structure files, or prepare code for upstream style expectations | Naming conventions, capitalization rules, notation spellings, and style constraints |
+| [Project Architecture](skills/project-architecture.md) | Need to plan a multi-file formalization or shape a reusable local API | File layout, definition engineering, blueprint use, and performance considerations |
+| [Sources and References](skills/SOURCES.md) | Need provenance or direct upstream citations | Source list for the material synthesized in this repository |
+
+### Domain References
+
+These files are the main value of the repository once the subject area is
+known.  Each one narrows the search space by collecting the standard types,
+common imports, familiar lemma names, and domain-specific tactics for one part
+of Mathlib.  Load the single closest file first, then widen only if the task
+crosses domains.
+
+| File | Use when | Contents |
+|------|----------|----------|
+| [Probability](skills/domains/probability.md) | The task involves probability spaces, random variables, independence, conditioning, martingales, or kernels | Standard probability types, import patterns, and common API shapes |
+| [Measure Theory and Analysis](skills/domains/measure-theory-analysis.md) | The task involves measures, integration, a.e. reasoning, derivatives, filters, or analytic estimates | Measure-theoretic and analytic patterns, including automation and typeclass issues |
+| [Combinatorics](skills/domains/combinatorics.md) | The task involves `Finset`, big operators, counting, graphs, or additive combinatorics | Finite combinatorial data structures, summation patterns, and counting lemmas |
+| [Algebra and Number Theory](skills/domains/algebra-number-theory.md) | The task involves groups, rings, ideals, fields, localization, or Galois theory | Standard algebraic structures, bundled morphisms, and common theorem patterns |
+| [Topology](skills/domains/topology.md) | The task involves topological spaces, filters, continuity, compactness, metric spaces, or manifolds | Topological APIs, continuity tooling, and filter-oriented reasoning |
+| [Linear Algebra](skills/domains/linear-algebra.md) | The task involves modules, vector spaces, matrices, eigenvalues, tensor products, or inner-product spaces | Linear-algebraic structures, matrix APIs, and common tactics for finite-dimensional arguments |
+| [Category Theory](skills/domains/category-theory.md) | The task involves categories, functors, limits, adjunctions, abelian categories, or sheaves | Category-theoretic tactics, rewriting tools, and common structural patterns |
+
+### Support Files
+
+These files do not carry mathematical guidance directly, but they help an agent
+judge provenance, project intent, and pending gaps.  They are useful when the
+task involves editing the repository itself or evaluating how much trust to put
+in a particular synthesis.  They matter less when the job is only to solve a
+Lean problem quickly.
+
+| File | Use when | Contents |
+|------|----------|----------|
+| [Project README](README.md) | Need the short repository-level description and current framing | Project overview and positioning |
+| [TODO](TODO.md) | Need to see which external sources have been identified but not yet integrated | Pending source list |
+| [Development Notes](devnotes.md) | Need background on recent edits, rationale, or outstanding documentation work | Development journal with change notes and local decisions |

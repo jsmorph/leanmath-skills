@@ -76,8 +76,8 @@ Some useful tools live outside Mathlib itself.  They help with compilation repai
 
 | Resource | Use | Notes | Primary reference |
 |----------|-----|-------|-------------------|
-| [cameronfreer/lean4-skills](https://github.com/cameronfreer/lean4-skills) | Operational Lean workflow for agents | Covers prove-review-golf loops, compilation debugging, and deeper tactic references. | [SKILL](../SKILL.md), [Sources and References](SOURCES.md) |
-| [leanprover/skills](https://github.com/leanprover/skills) | Official Lean-team workflow skills | Covers `mathlib-pr`, `mathlib-review`, `mathlib-build`, and related workflows. | [SKILL](../SKILL.md), [Sources and References](SOURCES.md) |
+| [cameronfreer/lean4-skills](https://github.com/cameronfreer/lean4-skills) | Operational Lean workflow for agents | Covers prove-review-golf loops, compilation debugging, and deeper tactic references. | [Root Reference](ROOT.md), [Sources and References](SOURCES.md) |
+| [leanprover/skills](https://github.com/leanprover/skills) | Official Lean-team workflow skills | Covers `mathlib-pr`, `mathlib-review`, `mathlib-build`, and related workflows. | [Root Reference](ROOT.md), [Sources and References](SOURCES.md) |
 | [Lean Zulip](https://leanprover.zulipchat.com/) | Community discussion and current practice | Useful when the docs lag behind current Mathlib behavior. | [Search and Discovery](search-and-discovery.md), [Sources and References](SOURCES.md) |
 
 ## Pending Review

@@ -15,8 +15,11 @@ such as the Mathlib lint threshold in the architecture notes.
 Added [TODO.md](TODO.md) with a note to consider Vilin97's mathlib conventions as an
 additional source.
 Added Axle documentation as another source to consider.
-Added [Tool Index](references/tools.md) to consolidate the tool references already scattered across the repository.
+Added [Tool Index](skills/tools.md) to consolidate the tool references already scattered across the repository.
 Added Aristotle as another source to consider.
 Added botbaki as another source to consider.
 Added polyproof as another source to consider.
 Added `.gitignore` entries for `.codex` and editor backup files.
+Moved the root skill document from `SKILL.md` to [Root Reference](skills/ROOT.md).
+Renamed the `references` directory to `skills`.
+Restored [Skill Overview](SKILL.md) as the top-level entry point for the repository.
