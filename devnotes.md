@@ -9,3 +9,10 @@ use direct GitHub file links under `plugins/lean4/skills/lean4/references/`.
 Removed the line-count annotations from the root skill and the places that cited
 upstream files by size.  The remaining numeric mentions are functional guidance,
 such as the Mathlib lint threshold in the architecture notes.
+
+## 2026-04-11
+
+Added [TODO.md](TODO.md) with a note to consider Vilin97's mathlib conventions as an
+additional source.
+Added Axle documentation as another source to consider.
+Added [Tool Index](references/tools.md) to consolidate the tool references already scattered across the repository.

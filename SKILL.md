@@ -60,6 +60,7 @@ below. Don't load everything.
 | [Search and Discovery](references/search-and-discovery.md) | Need to find a Mathlib lemma, definition, or file. Covers five search strategies, naming conventions for guessing names, Mathlib file hierarchy, Loogle/LeanSearch. |
 | [Naming and Style](references/naming-and-style.md) | Naming definitions/lemmas, formatting code, preparing a Mathlib PR. Full capitalization rules, symbol→name dictionary, variable conventions, file headers, linting. |
 | [Project Architecture](references/project-architecture.md) | Planning a multi-file formalization. Definition engineering, Mathlib integration, file organization, the Blueprint model, type hierarchies, contributing to Mathlib. |
+| [Tools](references/tools.md) | Need a consolidated view of search services, automation tactics, project tooling, and community resources. |
 
 ### Domain Sub-Skills
 
