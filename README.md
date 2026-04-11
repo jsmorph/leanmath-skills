@@ -17,5 +17,5 @@ repo and then use it as it sees fit.  Then contemplate.  The root skill is
 obviously [SKILL.md](SKILL.md).  That document should direct your agents to more 
 specific documentation.
 
-Tools are an interesting topic.  Currently tools are fair game here, but we
-won't emphasize MCP and instead prefer CLI tools.
+Currently tools are fair game here.  We won't emphasize MCP and instead prefer 
+CLI tools.
