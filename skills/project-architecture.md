@@ -63,6 +63,33 @@ Use the weakest structure that suffices.
 - For deep typeclass debugging, see
   [instance-pollution.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/instance-pollution.md).
 
+## Mining Large Formalization Repos
+
+Recent large Lean 4 projects are often more useful than older static tutorials, because they show current Mathlib idioms under real pressure.
+
+### First-pass reading order
+
+1. Read the README for root imports, headline theorem names, and any stated entry files.
+2. Find the top-level import modules and theorem entry points.
+3. Map headline results back to supporting infrastructure files.
+4. Check whether the repo links Mathlib PRs or upstreamed declarations.
+5. Prefer generated docs, theorem indices, or Lean-to-TeX crosswalk files when available.
+
+### What to extract
+
+- namespace conventions
+- root import shape
+- file and module dependency map
+- reusable helper-lemma patterns
+- places where the project had to adapt textbook mathematics to Mathlib-native definitions
+- evidence that some local material has already been upstreamed or superseded
+
+### Practical cautions
+
+- Prefer recent Lean 4 / current-Mathlib projects over older material when they cover similar ground.
+- Do not treat a project repo as a second Mathlib. Separate stable upstream knowledge from project-local experimental infrastructure.
+- Use project repos for workflow, architecture, and declaration-discovery hints, then verify against current Mathlib before promoting advice into a general skill.
+
 ## Contributing to Mathlib
 
 Follow https://leanprover-community.github.io/contribute/. Key points:

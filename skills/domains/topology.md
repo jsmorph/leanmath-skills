@@ -54,6 +54,22 @@ Filter.Tendsto f (𝓝 a) atTop
 Filter.Tendsto f (𝓝[s] a) (𝓝 y)
 ```
 
+## Translating Textbook Topology into Lean
+
+Recent topology teaching repos are useful mainly because they expose the translation layer between textbook point-set topology and current Lean 4 / Mathlib practice.
+
+### What they are good for
+
+- understanding `TopologicalSpace` from first principles
+- learning how continuity, open sets, and induced constructions are encoded
+- seeing small exercise-sized proofs before dropping into full Mathlib abstraction
+
+### How to use them safely
+
+- Prefer recent Lean 4 repos over older topology tutorials.
+- Use them for onboarding and translation patterns, not as the final authority on current Mathlib APIs.
+- When a pedagogical repo rebuilds topology without `Mathlib.Topology`, treat that as a learning aid. Before giving advice, map the local definitions back to current Mathlib structures.
+
 ## Continuity
 
 ### Levels of continuity

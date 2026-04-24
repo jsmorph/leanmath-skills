@@ -9,6 +9,8 @@
 This reference translates mathematical proof language into Lean 4 tactic proofs.
 Organized by the kind of reasoning step you want to express.
 
+Because Lean 4 and Mathlib evolve quickly, prefer recent Lean 4 / current-Mathlib sources when choosing notation, APIs, and workflow patterns. Older Lean 3 or early-port material can still be useful as background, but should not drive authoring unless revalidated against current practice.
+
 ---
 
 ## Forward Reasoning (building from what you know)
@@ -125,6 +127,31 @@ Organized by the kind of reasoning step you want to express.
 | "Combine a.e. hypotheses pointwise" | `filter_upwards [h₁, h₂] with x hx₁ hx₂` |
 | "a.e. equal functions have equal integrals" | `integral_congr_ae h` |
 | "P holds a.e., so Q holds a.e." | `filter_upwards [hP] with x hx; exact ...` |
+
+## Textbook-to-Mathlib Adaptation Patterns
+
+Recent analysis-oriented repos make the same point repeatedly: the mathematically natural statement in a paper or textbook is often not the most workable Lean statement. Before forcing the paper's surface form, check whether Mathlib already prefers a nearby formulation.
+
+### Common adaptation moves
+
+| Textbook habit | Lean / Mathlib adaptation |
+|---------------|---------------------------|
+| Sequences indexed from `1` | Reindex to start at `0` when working with `Nat`, `Finset.range`, series APIs, or recursion patterns |
+| Partial operations with side conditions | Prefer total functions plus explicit hypotheses or side lemmas |
+| Paper-local definitions introduced early | Prefer Mathlib's existing definitions; prove equivalence if needed |
+| One large theorem statement mirroring the paper | Break into helper lemmas that match existing Mathlib abstractions |
+| Custom notation matching the paper | Use Mathlib notation unless custom notation removes substantial friction |
+
+### Practical guidance
+
+- If a textbook proof uses indexing that fights `Nat` recursion or `Finset.range`, rewrite the statement early instead of carrying shifts through every lemma.
+- If a paper uses a partial operation, check whether Mathlib models it as a total function with junk values outside the intended domain. That style is often easier to compose with automation.
+- If you start with a pedagogical local definition, decide explicitly whether it is temporary onboarding scaffolding or part of the long-term API.
+- When a result feels awkward to state, search for the surrounding Mathlib definitions first. Often the real issue is not the proof but the formulation.
+
+### Warning sign
+
+If you find yourself repeatedly coercing between nearly identical definitions, rewriting index shifts by hand, or carrying avoidable domain side conditions, step back and restate the problem in a more Mathlib-native way.
 
 ## Goal Management
 

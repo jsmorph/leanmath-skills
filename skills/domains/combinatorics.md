@@ -175,6 +175,28 @@ Rich library from the PFR project and related work:
 
 Located under `Mathlib.Combinatorics.Additive.*`.
 
+## Mining Combinatorics Repos Carefully
+
+Recent combinatorics teaching and research repos can be excellent complements to Mathlib docs, but only if you separate stable patterns from local experimentation.
+
+### Good uses of project repos
+
+- find current topic clusters worth searching in Mathlib first
+- collect small worked examples for `Finset`, big operators, graphs, and counting arguments
+- see how pedagogical repos stage theorem-discovery for newcomers
+- identify which results were later upstreamed and which remain project-local
+
+### Practical reading strategy
+
+1. Start with recent Lean 4 repos, not Lean 3 notes.
+2. Read the README and file layout before mining declarations.
+3. Distinguish course-style onboarding material from frontier project infrastructure.
+4. Check whether a result now exists in Mathlib before treating the repo proof as the recommended route.
+
+### Warning sign
+
+If a repo proof depends on large amounts of local scaffolding for a result that now appears in Mathlib, treat it as historical context, not current default guidance.
+
 ## Common Proof Patterns
 
 ### Double counting

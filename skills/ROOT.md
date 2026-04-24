@@ -49,6 +49,8 @@ tree, math-to-Lean translation patterns, and dispatch table for deeper reference
 **Load on demand:** One or two reference files per query, based on the dispatch table
 below. Don't load everything.
 
+**Recency rule:** Prefer recent Lean 4 / current-Mathlib guidance by default. Older Lean 3, early-port, or stale project material can still be useful as background, but should be revalidated before it drives advice, examples, or API choices.
+
 ---
 
 ## Dispatch Table

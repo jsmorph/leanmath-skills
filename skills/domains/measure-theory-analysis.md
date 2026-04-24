@@ -7,7 +7,10 @@
 > which covers sub-σ-algebras, conditional expectation, instance pollution, and
 > trimmed measures, and
 > [instance-pollution.md](https://github.com/cameronfreer/lean4-skills/blob/main/plugins/lean4/skills/lean4/references/instance-pollution.md)
-> for typeclass debugging. See [Sources and References](../SOURCES.md).
+> for typeclass debugging. Recent large-repo signals also matter here: current Lean 4
+> analysis projects such as De Giorgi--Nash--Moser companion repos and layered
+> analysis/probability developments are often better guides to present-day workflow
+> than older tutorials. See [Sources and References](../SOURCES.md).
 
 ## Setup
 
@@ -219,6 +222,31 @@ norm_add_le x y          -- triangle inequality
 dist_comm x y            -- symmetry
 norm_nonneg x            -- ‖x‖ ≥ 0
 ```
+
+## Reading Modern Analysis Repos
+
+For advanced analysis, recent large Lean 4 repos are often the fastest way to learn current working patterns.
+
+### What to look for first
+
+- root imports and entry modules
+- theorem names for the headline results
+- whether the repo separates Mathlib extensions from project-specific theory
+- generated docs, dependency graphs, summary pages, or Lean-to-TeX crosswalk files
+- whether README text explains the layering of helper lemmas below the main theorems
+
+### Typical reusable signals
+
+- local infrastructure for Sobolev spaces, weak solutions, kernels, Fourier analysis, or function-space integration
+- repeated coercion or rewriting pain points that reveal where Mathlib-native formulations matter
+- staged theorem architecture: infrastructure first, local estimates next, headline regularity or convergence results last
+- explicit documentation of import structure and dependency layering
+
+### Practical cautions
+
+- Prefer recent Lean 4 / current-Mathlib repos over older analysis tutorials when they disagree.
+- Do not generalize repo-local conventions into advice unless they appear reusable and consistent with current Mathlib.
+- Separate three buckets: already upstream in Mathlib, generally reusable project-local infrastructure, and one-off theorem-specific code.
 
 ## Common Proof Patterns
 
