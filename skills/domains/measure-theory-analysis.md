@@ -248,6 +248,16 @@ For advanced analysis, recent large Lean 4 repos are often the fastest way to le
 - Do not generalize repo-local conventions into advice unless they appear reusable and consistent with current Mathlib.
 - Separate three buckets: already upstream in Mathlib, generally reusable project-local infrastructure, and one-off theorem-specific code.
 
+### Current high-value repo patterns
+
+Recent analysis projects suggest a few especially reusable reading patterns.
+
+- **De Giorgi / elliptic regularity repos:** start from the root import and headline theorem names, then work backward into the infrastructure for Sobolev spaces, weak solutions, and normalized/rescaled theorem statements.
+- **Layered analysis / probability repos such as OSforGFF:** look for explicit architecture documents, import graphs, and summary pages. These often expose the cleanest split between Mathlib extensions, reusable functional-analysis infrastructure, and theorem-specific layers.
+- **Upstream-aware projects such as FormalizingGMT:** check which lemmas have already been pushed to Mathlib and which remain local. This is often the fastest way to avoid teaching stale local APIs.
+
+These projects are useful not because their local abstractions should automatically be copied, but because they reveal how current Lean 4 developments stage serious analysis: infrastructure first, then transport lemmas, then the final regularity / representation / structure theorems.
+
 ## Common Proof Patterns
 
 ### Integral inequality via a.e. bound
