@@ -49,6 +49,8 @@ Favor items that provide one or more of the following:
 - Start with the Lean community blog.
 - Check for new `Month in Mathlib` / `New in mathlib` material.
 - Prefer recent Lean 4 and current-mathlib guidance over older material.
+- When research suggests `leanmath-skills` edits, update iteratively in small passes rather than large rewrites.
+- Treat publication date and current-mathlib alignment as first-pass ranking signals; older material must earn its place by offering something still not covered by newer sources.
 - Use arXiv selectively, not as the primary feed.
 - Treat maintenance/discovery tools as first-class if they would improve `leanmath-skills`.
 - Add links only when they are genuinely informative; avoid filling the list with thin announcements.

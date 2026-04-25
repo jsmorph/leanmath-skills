@@ -330,3 +330,15 @@ Format:
   - Useful repo-level complement to the paper above: it highlights a small pair of entry files (`Definitions.lean`, `MainResults.lean`), documents an axiom-audit path, and makes the large 17k-line development more navigable. That packaging detail makes it more relevant to skill authoring than a bare theorem statement would be.
   - Category: repo
   - Added: 2026-04-24
+
+## 2026-04-25 additions
+
+- [high] jzuiddam/GroupTheoreticShannonCapacity — https://github.com/jzuiddam/GroupTheoreticShannonCapacity
+  - Strong combinatorics / discrete-math lead with unusually good repo-level navigation value: the README maps each main theorem to Lean declarations, gives a clear file-level architecture, and links an interactive dependency graph. The subject matter is also interesting in its own right: Shannon capacity of graphs, fraction graphs, and lattice-based constructions. Good candidate for skill notes on how to mine a mature formalization repo and on proof decomposition in graph-theoretic formalization.
+  - Category: repo
+  - Added: 2026-04-25
+
+- [medium] hwatheod/galeshapley-lean — https://github.com/hwatheod/galeshapley-lean
+  - Worth keeping as a combinatorics / algorithms case study because the README is unusually explicit about theorem inventory, proof lineage, implementation choices, and alternative computable versions of the Gale-Shapley algorithm. Useful less as frontier mathematics than as a readable example of how a nontrivial discrete formalization can expose stable-matchings structure, lattice results, and executable Lean code in one place.
+  - Category: repo
+  - Added: 2026-04-25
